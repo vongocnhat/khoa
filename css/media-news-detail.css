@@ -1,0 +1,19 @@
+@media (max-width: 575px) {
+	#nd .news-detail .news-img {
+		width: 100%;
+	}
+	#nd .news-detail .news-img img {
+		margin: auto;
+		display: block;
+	}
+	#nd .news-detail .news-description {
+		padding: 15px 0 0 0;
+		-webkit-line-clamp: 3;
+		width: 100%;
+	}
+}
+@media (min-width: 992px) and (max-width: 1050px) {
+	#nd .container{
+		padding-left: 15px;
+	}
+}

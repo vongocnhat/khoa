@@ -1,0 +1,48 @@
+.container {
+	/*outline: 1px solid;*/
+}
+img {
+	width: 100%;
+}
+.news .author, .news .viewed  {
+	float: right;
+	margin-left: 20px;
+}
+.news .content {
+	margin-top: 15px;
+}
+.news .content p {
+	text-align: justify;
+}
+.dialog {
+	position: fixed;
+	height: 100%;
+	box-sizing: initial;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(21, 44, 34, 0.75);
+	width: 100%;
+	overflow-y: auto;
+	display: none;
+}
+.dialog .news {
+	width: 70%;
+	background-color: #fff;
+	padding: 45px 20px 20px 20px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.dialog.show {
+	display: block;
+    animation: fadeIn 1.5s;
+}
+.btnClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0;
+	cursor: pointer;
+}
